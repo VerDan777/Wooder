@@ -16,6 +16,7 @@
         background-color: $black;
         background-size: cover;
         background-color: rgba($black,0.9);
+        background-attachment: fixed;
         
         width: 50%;
         height: 100vh;
@@ -37,6 +38,7 @@
         background-image: url('./img/bg-right.png');
         background-repeat: no-repeat;
         background-color: $black;
+        background-attachment: fixed;
         
         height: 105vh;
         width: 50%;

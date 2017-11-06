@@ -314,6 +314,7 @@ ul {
   background-color: #010101;
   background-size: cover;
   background-color: rgba(1, 1, 1, 0.9);
+  background-attachment: fixed;
   width: 50%;
   height: 100vh;
   -webkit-box-ordinal-group: 1;
@@ -338,6 +339,7 @@ ul {
   background-image: url("./img/bg-right.png");
   background-repeat: no-repeat;
   background-color: #010101;
+  background-attachment: fixed;
   height: 105vh;
   width: 50%;
   display: inline-block;
@@ -589,7 +591,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
+  padding: 100px 170px;
 }
 
 .services__description {
@@ -603,12 +609,28 @@ ul {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding-bottom: 25px;
 }
 
 .services__title::before {
   content: '-';
   width: 100px;
   height: 5px;
+}
+
+.services__img {
+  width: 620px;
+  height: 400px;
+  padding-left: 50px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-size: cover;
+  background-position: left left;
+}
+
+.services__img img {
+  width: 100%;
+  width: 100%;
 }
 
 .services__text {
