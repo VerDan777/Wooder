@@ -1,0 +1,19 @@
+.logo {
+    // width: 33.33%;
+
+    &__text {
+        @include font($white,$mainFont,2.25rem,bold);
+        position: relative;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+
+        &::before {
+            content: '';
+            @include centerer-y;
+            left: 45px;
+            height: 4px;
+            width: 50px;
+            background: $accent;
+        }
+    }
+}

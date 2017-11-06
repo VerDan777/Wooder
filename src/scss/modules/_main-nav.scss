@@ -1,0 +1,16 @@
+.main-nav {
+    position: relative;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}

@@ -1,0 +1,17 @@
+.button {
+    // text-align: center;
+    border: 2px solid $white;
+    width: 300px;
+    cursor: pointer;
+    display: block;
+    padding: 20px 80px;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include font($white,$mainFont,0.875rem, bold);
+    
+    &:hover {
+        color: $black;
+        background-color: white;
+        transition: 0.5s;
+    }
+}

@@ -1,0 +1,28 @@
+header.site-header
+    .site-header__container
+        .site-header__left
+        .site-header__right
+        nav.main-nav
+            .menu-icon: .menu-icon__middle
+            .logo
+                h1.logo__text Wooder
+            nav.main-menu
+                ul.main-menu
+                -var menu = ['Home','Products','About']
+                -var menuLinks = ['#home','#products','#about']
+                    each item,key in menu
+                        li.main-menu__item: a.main-menu__link(href=menuLinks[key])=menu[key]
+            .icon-info: img(src="./img/icon/icon-info.png" alt='icon-info')
+            select.select
+                option.select__eng ENG
+                option.select__rus RUS
+    .container
+        section.hero: .container
+            .hero__container
+                h1.hero__title Wooder
+                a.button(href="#") Learn more --->
+                .hero__scroll-container
+                    img.hero__mouse(src="./img/icons/mouse.png")
+                    img.hero__arrow(src="./img/icons/arrow.png")
+    
+
