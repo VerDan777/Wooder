@@ -1,12 +1,13 @@
-section.quality
+section.quality: .container
     .quality__container
         .quality__title Wooder - is quality
-        .quality__text We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.
-        mixin item(imgURL,title)
-            article.quality__item
-                img(src=imgURL, alt="")
-                h4.quality__title=title
-        +item('./img/quality.png','Innovative Design')
-        +item('./img/quality.png','High-level Skills')
-        +item('./img/quality.png','Quality Products')
-        
+        .quality__text We create unique design objects made of rare wood, specially under the order.<br> Look at the short video about our work.
+        .quality__list
+            mixin item(imgURL,title)
+                article.quality__item
+                    img(src=imgURL, alt="")
+                    h4.quality__title=title
+            +item('./img/quality.png','Innovative Design')
+            +item('./img/quality.png','High-level Skills')
+            +item('./img/quality.png','Quality Products')
+            

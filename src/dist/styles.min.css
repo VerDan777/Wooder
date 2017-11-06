@@ -647,6 +647,55 @@ ul {
   width: 50px;
 }
 
+.quality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quality__container {
+  text-align: center;
+}
+
+.quality__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.quality__title {
+  color: #010101;
+  font-family: "Proxima Nova Bold", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.quality__title::after {
+  content: '';
+  height: 3px;
+  width: 50px;
+  bottom: 25px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #bea67c;
+}
+
+.quality__text {
+  color: #636262;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 0.93rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
 @font-face {
   font-family:'Proxima Nova Regular';src:url("../fonts/Proxima Nova Regular.otf");src:url("../fonts/Proxima Nova Regular.otf") format("opentype");
 }

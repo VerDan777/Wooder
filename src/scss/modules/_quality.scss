@@ -1,0 +1,31 @@
+.quality {
+    display: flex;
+    
+    &__container {
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        @include font($black,$mainFont,3rem,bold);
+        text-transform: uppercase;
+        padding-bottom: 50px;
+        position: relative;
+
+        &::after {
+            content: '';
+            height: 3px;
+            width: 50px;
+            bottom: 25px;
+            @include centerer-x;
+            background: $accent;
+        }
+    }
+    &__text {
+        @include font(#636262,$mainFontRegualar,0.93rem,500);
+        line-height: 2;
+    }
+}
